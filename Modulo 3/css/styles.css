@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Roboto+Slab&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'JetBrains Mono', sans-serif;
+}
+
+.title {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+#to-top {
+  text-decoration: none;
+  border: 2px solid #404040;
+  background: lightgray;
+  color: black;
+  padding: 2px 5px;
+  position: sticky;
+  bottom: 1em;
+}
+
+#main-content {
+  margin-top: 3em;
+}
+
+#main-content > .row {
+  padding: 15px;
+}
+
+#main-content > .row > section {
+  margin: 0 0 2em;
+  background: #404040;
+  color: white;
+	scroll-margin-top: 4em;
+}
+
+header > .navbar {
+  background: gray;
+}
+
+.navbar-brand {
+  font-size: x-large;
+}
+
+#nav-list {
+  margin: 0;
+}
+
+#food-nav {
+  position: relative;
+  padding: 0;
+  width: 100vw;
+}
+
+.nav-item:hover, .nav-item:active, .navbar-toggle:hover, .navbar-toggle:active {
+  background-color: #404040 !important;
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+.nav-link {
+  border-bottom: 1px solid lightgray;
+}
+
+.icon-bar {
+  background-color: white !important;
+}
+
+@media (min-width: 768px) {
+
+  #main-content > .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #main-content > .row > section:nth-child(1) {
+    border-right: 0.5em solid white;
+  }
+  
+  #main-content > .row > section:nth-child(2) {
+    border-left: 0.5em solid white;
+  }
+  
+}
+
+@media (min-width: 991px) {
+
+  #main-content > .row > section:nth-child(2) {
+    border-left: 0.25em solid white;
+    border-right: 0.25em solid white;
+  }
+  
+  #main-content > .row > section:nth-child(3) {
+    border-left: 0.5em solid white;
+  }
+  
+}
